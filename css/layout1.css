@@ -1,0 +1,38 @@
+@font-face {
+  font-family: "MissedGyuwon";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/2510-1@1.0/Griun_Gyuwon-Rg.woff2")
+    format("woff2");
+  font-weight: normal;
+  font-display: swap;
+}
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "MissedGyuwon";
+  font-weight: 300;
+}
+
+.header,
+.footer {
+  background-color: #333;
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+
+.main {
+  display: flex;
+}
+
+.sidebar {
+  width: 25%;
+  text-align: center;
+  background-color: deepskyblue;
+  padding: 20px;
+}
+
+.content {
+  background-color: gold;
+  padding: 20px;
+  flex: 1;
+}

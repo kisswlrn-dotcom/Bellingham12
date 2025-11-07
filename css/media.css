@@ -1,0 +1,124 @@
+@font-face {
+  font-family: "GMarketSans";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansLight.woff")
+    format("woff");
+  font-weight: 300;
+  font-display: swap;
+}
+@font-face {
+  font-family: "GMarketSans";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansMedium.woff")
+    format("woff");
+  font-weight: 500;
+  font-display: swap;
+}
+@font-face {
+  font-family: "GMarketSans";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansBold.woff")
+    format("woff");
+  font-weight: 700;
+  font-display: swap;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: GMarketSans;
+}
+#container {
+  width: 100%;
+}
+header {
+  width: 100%;
+}
+header > h1 {
+  text-align: center;
+  font-size: 40px;
+  padding: 20px;
+}
+#menus {
+  width: 100%;
+}
+#menus > div {
+  height: 300px;
+  border: 1px solid black;
+  margin-bottom: 20px;
+  position: relative;
+}
+#menus h2 {
+  position: absolute;
+  right: 5%;
+  bottom: 10px;
+  color: white;
+  text-shadow: 3px 3px 5px white;
+}
+#menu1,
+#menu2,
+#menu3,
+#menu4,
+#menu5 {
+  width: 100%;
+}
+#menu1 {
+  background: url(../images/travel1.jpg) no-repeat center/cover;
+}
+#menu2 {
+  background: url(../images/travel2.jpg) no-repeat center/cover;
+}
+#menu3 {
+  background: url(../images/travel3.jpg) no-repeat center/cover;
+}
+#menu4 {
+  background: url(../images/travel4.jpg) no-repeat center/cover;
+}
+#menu5 {
+  background: url(../images/travel5.jpg) no-repeat center/cover;
+}
+footer {
+  width: 100%;
+  background-color: black;
+  height: 100px;
+}
+footer > p {
+  font-size: 14px;
+  color: white;
+  text-align: center;
+  line-height: 100px;
+}
+
+/* 태블릿 */
+@media (min-width: 768px) and (max-width: 1024px) {
+  #menus {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+
+  #menu1,
+  #menu2,
+  #menu3,
+  #menu4 {
+    width: 49%;
+  }
+}
+
+/* 데스크탑 */
+@media (min-width: 1024px) {
+  #menus {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  #menu1,
+  #menu2,
+  #menu3,
+  #menu4 {
+    width: 32%;
+  }
+  #menu5 {
+    width: 66%;
+  }
+}
